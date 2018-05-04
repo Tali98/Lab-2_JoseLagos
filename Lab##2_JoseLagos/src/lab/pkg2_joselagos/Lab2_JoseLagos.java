@@ -82,6 +82,17 @@ public class Lab2_JoseLagos {
                             }
 
                             break;
+                        case 3:
+                            for (int a=0;a<al.nombre.size();a++){
+                                System.out.println(al.nombre.get(a));
+                                System.out.println("NOTA "+al.notas.get(a));
+                            }
+                            break;
+                        case 4:
+                            break;
+                        default:
+                            System.out.println("no existe");
+                            break;
                     }
                     break;
                 case 2:
@@ -196,6 +207,14 @@ public class Lab2_JoseLagos {
                                                 }
                                             }
                                             break;
+                                        case 4:
+                                            System.out.println("Ingrese que materia quiere ver");
+                                            for (int w=0;a<ex.materias.size();a++){
+                                                System.out.println(w+" "+ex.materias.get(w));
+                                            }
+                                            int x=entrada.nextInt();
+                                            System.out.println(al.notas.get(x));
+                                            break;
                                     }
                                 } else {
                                     System.out.println("Contrasena equivocada");
@@ -205,6 +224,9 @@ public class Lab2_JoseLagos {
                             System.out.println("no existe ese usuario");
                         }
                     }
+                    break;
+                default:
+                    System.out.println("no existe esa opcion");
                     break;
             }
             System.out.println("Desea hacer otra operacion?");
